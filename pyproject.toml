@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "wordle-helper-bot"
+version = "0.1.0"
+description = ""
+authors = ["Mikhail <69933358+smellofnapalm@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "wordle_helper_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-telegram-bot = "^20.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
