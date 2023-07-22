@@ -43,15 +43,3 @@ class GameState:
                 case 'G':
                     self.possible_chars[i] = set([word[i]])
                     self.definetly_in.add(word[i])
-
-
-if __name__ == '__main__':
-    gs = GameState()
-    gs.next_step('slate', 'BBBYY')
-    gs.next_step('cured', 'BBYGB')
-    gs.next_step('toner', 'YBYGG')
-    gs.next_step('niter', 'YBGGG')
-    print(gs.possible_chars)
-    print(gs.definetly_in)
-    print(gs.used_words)
-        
